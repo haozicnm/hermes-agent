@@ -1,0 +1,7 @@
+name: macro-tool
+version: "0.1.0"
+description: "MacroTool reflection-before-action pattern. Wraps all tool schemas into a single AgentOutput tool that requires the LLM to output evaluation, memory, and next_goal before choosing an action. Inspired by alibaba/page-agent."
+author: "Hermes Agent"
+hooks:
+  - pre_tool_call
+  - transform_tool_result
